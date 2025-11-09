@@ -3,38 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anthony Cuozzo</title>
+  <title>Anthony Cuozzo | Behavioral Neuroscience</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #222; }
-    header { background: #1c2a48; color: #fff; padding: 40px 20px; text-align: center; }
-    header img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; }
-    main { max-width: 900px; margin: auto; padding: 40px 20px; }
-    h1 { margin-top: 20px; font-size: 2.2rem; }
-    h2 { border-bottom: 2px solid #ddd; padding-bottom: 6px; margin-top: 40px; }
-    a { color: #1c2a48; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #222;
+      background-color: #f9f9f9;
+    }
+
+    a {
+      color: #1c2a48;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background: #1c2a48;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+    }
+
+    header h1 {
+      margin: 20px 0 10px;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+
+    /* Main Content */
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 8px;
+      margin-top: 50px;
+      font-size: 1.8rem;
+      color: #1c2a48;
+    }
+
+    section p {
+      margin: 16px 0;
+    }
+
+    ul {
+      margin: 16px 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    /* Publications Styling */
+    #publications ul li {
+      background: #fff;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      margin-bottom: 12px;
+    }
+
+    #publications ul li strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #1c2a48;
+    }
+
+    /* Research Interests */
+    #research-interests ul li {
+      list-style-type: square;
+    }
+
+    /* Contact */
+    section#contact p a {
+      word-break: break-all;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      main {
+        padding: 20px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="profile.jpg" alt="Profile Photo" />
+    <img src="profile.jpg" alt="Profile Photo of Anthony Cuozzo" />
     <h1>Anthony Cuozzo</h1>
     <p>Behavioral Neuroscience | Psychopharmacology | Nicotine Use & Psychosis</p>
   </header>
+
   <main>
-   <section id="about-me">
-  <h2>About Me</h2>
-  <p>
-    I am a PhD researcher analyzing drug abuse vulnerability in psychosis via neurobiological mechanisms in a heritable rodent neonatal quinpirole model of dopamine dysregulation. My work focuses on modulation and stimulation of the mutually inhibitory adenosine A(2A)-metabotropic glutamate receptor type 5 (mGlu5)-dopamine D2 heteroreceptor complex.  
-  </p>
-  <p>
-    We have completed fiber photometry live dopamine imaging in the nucleus accumbens to evaluate differences in reward response between the offspring of quinpirole-treated animals and controls. Additionally, we are evaluating susceptibility to drug relapse in our model via direct exposure to nicotine or stressful stimuli.  
-  </p>
-  <p>
-    The primary focus of my dissertation is evaluating the role of α4β2 nicotinic acetylcholine receptors (nAChRs) in a nicotine vapor conditioned place preference paradigm and its impact on neural plasticity markers in our heritable model of dopamine dysregulation. The overarching goal of this project is to elucidate novel mechanistic actions and treatment targets aimed at reducing behavioral deficits in psychosis while simultaneously reducing the rewarding effects of comorbid nicotine use.
-  </p>
-</section>
-    <section>
+    <!-- About Me -->
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>
+        I am a PhD researcher analyzing drug abuse vulnerability in psychosis via neurobiological mechanisms in a heritable rodent neonatal quinpirole model of dopamine dysregulation. My work focuses on modulation and stimulation of the mutually inhibitory adenosine A(2A)-metabotropic glutamate receptor type 5 (mGlu5)-dopamine D2 heteroreceptor complex.
+      </p>
+      <p>
+        We have completed fiber photometry live dopamine imaging in the nucleus accumbens to evaluate differences in reward response between the offspring of quinpirole-treated animals and controls. Additionally, we are evaluating susceptibility to drug relapse in our model via direct exposure to nicotine or stressful stimuli.
+      </p>
+      <p>
+        The primary focus of my dissertation is evaluating the role of α4β2 nicotinic acetylcholine receptors (nAChRs) in a nicotine vapor conditioned place preference paradigm and its impact on neural plasticity markers in our heritable model of dopamine dysregulation. The overarching goal of this project is to elucidate novel mechanistic actions and treatment targets aimed at reducing behavioral deficits in psychosis while simultaneously reducing the rewarding effects of comorbid nicotine use.
+      </p>
+    </section>
+
+    <!-- Research Interests -->
+    <section id="research-interests">
       <h2>Research Interests</h2>
       <ul>
         <li>Nicotine reward and relapse-related learning</li>
@@ -44,42 +152,37 @@
       </ul>
     </section>
 
+    <!-- Selected Publications -->
     <section id="publications">
-  <h2>Selected Publications</h2>
-  <p>
-    Full reference list available <a href="#">here</a>.
-  </p>
-  <ul>
-    <li>
-      <strong>Peeters, L. D., Wills, L. J., Cuozzo, A. M., Ivanich, K. L., Brown, R. W.</strong> (2023). Reinstatement of nicotine conditioned place preference in a transgenerational model of drug abuse vulnerability in psychosis: Impact of BDNF on the saliency of drug associations. <em>Psychopharmacology</em>.
-    </li>
-    <li>
-      <strong>Peeters, L. D., Wills, L. J., Cuozzo, A. M., Ivanich, K. L., Turney, S. E., Bullock, L. P., Massey, S. R., Gass, J. T., Brown, R. W.</strong> (2024). Modulation of mGlu5 reduces rewarding associative properties of nicotine via changes in mesolimbic plasticity: Relevance to comorbid cigarette smoking in psychosis. <em>Pharmacology, Biochemistry and Behavior</em>.
-    </li>
-    <li>
-      <strong>Peeters, L. D., Wills, L. J., Cuozzo, A. M., Ahmed, C. D., Massey, S. R., Chen, W., Chen, Z., Wang, C., Gass, J. T., Brown, R. W.</strong> (2024). Effects of positive mGlu5 modulation on D2 signaling and nicotine conditioned place preference: Mechanisms of epigenetic inheritance in a transgenerational model of drug abuse vulnerability in psychosis. <em>Journal of Psychopharmacology</em>.
-    </li>
-    <li>
-      <strong>Cuozzo, A. M., Peeters, L. D., Ahmed, C. D., Wills, L. J., Gass, J. T., Brown, R. W.</strong> (2025). Investigation of the roles of the adenosine A(2A) and metabotropic receptor type 5 (mGlu5) receptors in prepulse inhibition and CREB signaling in a heritable rodent model of psychosis. <em>MDPI Cells</em>. Special Issue: Biological Mechanisms in the Treatment of Neuropsychiatric Diseases.
-    </li>
-    <li>
-      <strong>Cuozzo, A. M., Peeters, L. D., Ahmed, C. D., Wills, L. J., Wallen, E. E., Gass, J. T., Brown, R. W.</strong> (2025). Stress-induced reinstatement of nicotine conditioned place preference in a rodent model of dopamine dysregulation: Behavioral and molecular correlates of CREB and dynorphin signaling. In preparation.
-    </li>
-    <li>
-      <strong>Brown, R. W., Ivanich, K. L., Gill, W. D., Wills, L. J., Peeters, L. D., Cuozzo, A. M., Sawyer, B., Carr, K. I., Deehan, G. A. Jr., Ahmed, C. D., Akkaraju, G., Herget, A., Paugh, K., Revuelta, M., Lopez, F., Varadarajan, S., Gabbita, S. P.</strong> (2025). A novel orally bioavailable small molecule dual inhibitor targeting tumor necrosis factor-alpha and the dopamine transporter towards behavioral improvement and neuroinflammation in the 3xTg mouse model of Alzheimer’s Disease. In preparation.
-    </li>
-  </ul>
-</section>
+      <h2>Selected Publications</h2>
+      <p>Full reference list available <a href="#">here</a>.</p>
+      <ul>
+        <li>
+          <strong>Peeters, L. D., Wills, L. J., Cuozzo, A. M., Ivanich, K. L., Brown, R. W.</strong> (2023). Reinstatement of nicotine conditioned place preference in a transgenerational model of drug abuse vulnerability in psychosis: Impact of BDNF on the saliency of drug associations. <em>Psychopharmacology</em>.
+        </li>
+        <li>
+          <strong>Peeters, L. D., Wills, L. J., Cuozzo, A. M., Ivanich, K. L., Turney, S. E., Bullock, L. P., Massey, S. R., Gass, J. T., Brown, R. W.</strong> (2024). Modulation of mGlu5 reduces rewarding associative properties of nicotine via changes in mesolimbic plasticity: Relevance to comorbid cigarette smoking in psychosis. <em>Pharmacology, Biochemistry and Behavior</em>.
+        </li>
+        <li>
+          <strong>Peeters, L. D., Wills, L. J., Cuozzo, A. M., Ahmed, C. D., Massey, S. R., Chen, W., Chen, Z., Wang, C., Gass, J. T., Brown, R. W.</strong> (2024). Effects of positive mGlu5 modulation on D2 signaling and nicotine conditioned place preference: Mechanisms of epigenetic inheritance in a transgenerational model of drug abuse vulnerability in psychosis. <em>Journal of Psychopharmacology</em>.
+        </li>
+        <li>
+          <strong>Cuozzo, A. M., Peeters, L. D., Ahmed, C. D., Wills, L. J., Gass, J. T., Brown, R. W.</strong> (2025). Investigation of the roles of the adenosine A(2A) and metabotropic receptor type 5 (mGlu5) receptors in prepulse inhibition and CREB signaling in a heritable rodent model of psychosis. <em>MDPI Cells</em>. Special Issue: Biological Mechanisms in the Treatment of Neuropsychiatric Diseases.
+        </li>
+        <li>
+          <strong>Cuozzo, A. M., Peeters, L. D., Ahmed, C. D., Wills, L. J., Wallen, E. E., Gass, J. T., Brown, R. W.</strong> (2025). Stress-induced reinstatement of nicotine conditioned place preference in a rodent model of dopamine dysregulation: Behavioral and molecular correlates of CREB and dynorphin signaling. In preparation.
+        </li>
+        <li>
+          <strong>Brown, R. W., Ivanich, K. L., Gill, W. D., Wills, L. J., Peeters, L. D., Cuozzo, A. M., Sawyer, B., Carr, K. I., Deehan, G. A. Jr., Ahmed, C. D., Akkaraju, G., Herget, A., Paugh, K., Revuelta, M., Lopez, F., Varadarajan, S., Gabbita, S. P.</strong> (2025). A novel orally bioavailable small molecule dual inhibitor targeting tumor necrosis factor-alpha and the dopamine transporter towards behavioral improvement and neuroinflammation in the 3xTg mouse model of Alzheimer’s Disease. In preparation.
+        </li>
+      </ul>
+    </section>
 
-    <section>
+    <!-- Contact -->
+    <section id="contact">
       <h2>Contact</h2>
       <p>
         Email: <a href="mailto:cuozzoa@etsu.edu">cuozzoa@etsu.edu</a><br />
         ORCID: <a href="https://orcid.org/0009-0001-6795-0882" target="_blank">https://orcid.org/0009-0001-6795-0882</a><br />
         ResearchGate: <a href="https://www.researchgate.net/profile/Anthony-Cuozzo?ev=hdr_xprf" target="_blank">ResearchGate Profile</a><br />
-        LinkedIn: <a href="https://www.linkedin.com/in/anthony-cuozzo00/" target="_blank">LinkedIn</a>
-      </p>
-    </section>
-  </main>
-</body>
-</html>
+        LinkedIn
