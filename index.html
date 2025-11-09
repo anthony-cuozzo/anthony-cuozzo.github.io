@@ -88,21 +88,22 @@
       margin-top: 50px;
       border-bottom: 3px solid #ddd;
       padding-bottom: 8px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.8s forwards;
     }
 
     section p {
       margin: 16px 0;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.8s forwards;
     }
 
-    @keyframes fadeInUp {
-      from {opacity: 0; transform: translateY(20px);}
-      to {opacity: 1; transform: translateY(0);}
+    /* Scroll Reveal Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     /* Research Interests */
@@ -156,18 +157,6 @@
       color: #1c2a48;
     }
 
-    .pub-year {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background-color: #ffb400;
-      color: #fff;
-      padding: 3px 8px;
-      border-radius: 4px;
-      font-size: 0.85rem;
-      font-weight: bold;
-    }
-
     /* Contact */
     #contact p a {
       word-break: break-word;
@@ -198,10 +187,6 @@
       main {
         padding: 20px;
       }
-      .pub-year {
-        top: 10px;
-        right: 10px;
-      }
       #top-nav {
         flex-direction: column;
         gap: 12px;
@@ -228,7 +213,7 @@
 
   <main>
     <!-- About Me -->
-    <section id="about-me">
+    <section id="about-me" class="reveal">
       <h2>About Me</h2>
       <p>
         I am a PhD candidate in Biomedical Sciences at the East Tennessee State University Quillen College of Medicine. My research focuses on analyzing drug abuse vulnerability in psychosis via neurobiological mechanisms in a heritable rodent model of dopamine dysregulation. My work has previously focused on modulation and stimulation of the mutually inhibitory adenosine A(2A)-metabotropic glutamate receptor type 5 (mGlu5)-dopamine D2 heteroreceptor complex.
@@ -242,47 +227,41 @@
     </section>
 
     <!-- Research Interests -->
-    <section id="research-interests">
+    <section id="research-interests" class="reveal">
       <h2>Research Interests</h2>
       <div class="interest-grid">
-        <div class="interest-card">Nicotine reward and relapse-related vulnerability</div>
-        <div class="interest-card">Dopamine dysregulation and psychiatric implications</div>
-        <div class="interest-card">Transgenerational and developmental vulnerability mechanisms</div>
-        <div class="interest-card">Neural plasticity and altered neurocircuitry in drug reinforcement</div>
+        <div class="interest-card reveal">Nicotine reward and relapse-related vulnerability</div>
+        <div class="interest-card reveal">Dopamine dysregulation and psychiatric implications</div>
+        <div class="interest-card reveal">Transgenerational and developmental vulnerability mechanisms</div>
+        <div class="interest-card reveal">Neural plasticity and altered neurocircuitry in drug reinforcement</div>
       </div>
     </section>
 
     <!-- Selected Publications -->
-    <section id="publications">
+    <section id="publications" class="reveal">
       <h2>Publications</h2>
       <div class="pub-grid">
-        <div class="pub-card">
-          <span class="pub-year">2023</span>
+        <div class="pub-card reveal">
           <strong>Peeters, L. D., Wills, L. J., Cuozzo, A. M., Ivanich, K. L., Brown, R. W.</strong>
           <p>Reinstatement of nicotine conditioned place preference in a transgenerational model of drug abuse vulnerability in psychosis: Impact of BDNF on the saliency of drug associations. <em>Psychopharmacology</em>.</p>
         </div>
-        <div class="pub-card">
-          <span class="pub-year">2024</span>
+        <div class="pub-card reveal">
           <strong>Peeters, L. D., Wills, L. J., Cuozzo, A. M., Ivanich, K. L., Turney, S. E., ...</strong>
           <p>Modulation of mGlu5 reduces rewarding associative properties of nicotine via changes in mesolimbic plasticity: Relevance to comorbid cigarette smoking in psychosis. <em>Pharmacology, Biochemistry and Behavior</em>.</p>
         </div>
-        <div class="pub-card">
-          <span class="pub-year">2024</span>
+        <div class="pub-card reveal">
           <strong>Peeters, L. D., Wills, L. J., Cuozzo, A. M., Ahmed, C. D., Massey, S. R., ...</strong>
           <p>Effects of positive mGlu5 modulation on D2 signaling and nicotine conditioned place preference: Mechanisms of epigenetic inheritance in a transgenerational model of drug abuse vulnerability in psychosis. <em>Journal of Psychopharmacology</em>.</p>
         </div>
-        <div class="pub-card">
-          <span class="pub-year">2025</span>
+        <div class="pub-card reveal">
           <strong>Cuozzo, A. M., Peeters, L. D., Ahmed, C. D., Wills, L. J., Gass, J. T., Brown, R. W.</strong>
           <p>Investigation of the roles of the adenosine A(2A) and metabotropic receptor type 5 (mGlu5) receptors in prepulse inhibition and CREB signaling in a heritable rodent model of psychosis. <em>MDPI Cells</em>. Special Issue: Biological Mechanisms in the Treatment of Neuropsychiatric Diseases.</p>
         </div>
-        <div class="pub-card">
-          <span class="pub-year">2025</span>
+        <div class="pub-card reveal">
           <strong>Cuozzo, A. M., Peeters, L. D., Ahmed, C. D., Wills, L. J., Wallen, E. E., Gass, J. T., Brown, R. W.</strong>
           <p>Stress-induced reinstatement of nicotine conditioned place preference in a rodent model of dopamine dysregulation: Behavioral and molecular correlates of CREB and dynorphin signaling. In preparation.</p>
         </div>
-        <div class="pub-card">
-          <span class="pub-year">2025</span>
+        <div class="pub-card reveal">
           <strong>Brown, R. W., Ivanich, K. L., Gill, W. D., Wills, L. J., Peeters, L. D., Cuozzo, A. M., ...</strong>
           <p>A novel orally bioavailable small molecule dual inhibitor targeting tumor necrosis factor-alpha and the dopamine transporter towards behavioral improvement and neuroinflammation in the 3xTg mouse model of Alzheimer’s Disease. In preparation.</p>
         </div>
@@ -290,7 +269,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="reveal">
       <h2>Contact Info</h2>
       <p>
         Email: <a href="mailto:cuozzoa@etsu.edu">cuozzoa@etsu.edu</a><br>
@@ -309,5 +288,21 @@
     <a href="https://www.linkedin.com/in/anthony-cuozzo00/" target="_blank">LinkedIn</a>
   </footer>
 
+  <script>
+    // Scroll Reveal
+    function reveal() {
+      const elements = document.querySelectorAll('.reveal');
+      const windowHeight = window.innerHeight;
+      elements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 50) {
+          el.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', reveal);
+    window.addEventListener('load', reveal);
+  </script>
 </body>
 </html>
